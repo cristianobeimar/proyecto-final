@@ -1,0 +1,91 @@
+.prin_targ_cart{
+  display: flex;
+  flex-direction: column;
+}
+.targ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  max-width: 5rem;
+  border: 1px solid #b1acac;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(12, 12, 12, 0.5);
+  background-color: rgb(255, 255, 255);
+  color: #0c0c0c;
+  transition: all 0.3s;
+  margin: 15px;
+  text-align: center;
+  z-index: 6;
+}
+
+.img-card {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+.img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+}
+.targ .cantidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  bottom: 0;
+  color: rgb(248, 248, 248);
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #292828;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.targ button {
+  background-color: rgb(223, 247, 8);
+  height: 35px;
+  
+}
+.botones{
+  display: flex;
+  align-items: center; /* Alinea los botones verticalmente en el centro */
+  justify-content: center; /* Alinea los botones horizontalmente en el centro */
+  gap: 20px; 
+  max-width: 100px; 
+  margin: auto;
+}
+.product-data {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+  padding-right: 50px;
+  margin: -50px;
+}
+.compra{
+  color: #ffffff;
+  background-color:rgb(22, 98, 240);
+}
+.targ .delete {
+  margin-top: auto;
+  margin-right: -7rem;
+}

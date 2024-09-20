@@ -1,0 +1,49 @@
+.container_menu_web {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.carrito {
+  position: relative;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  background-color: #00b300;
+  height: 50px;
+  width: 50px;
+  color: rgb(248, 248, 248);
+  justify-content: center;
+  align-items: center;
+}
+
+.mascara_Carrito {
+  display: flex;
+  z-index: 1;
+  position:absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.house {
+  background-color: #fff;
+  /* margin-right: 20px; */
+  border-radius: 100%;
+}
+.numero {
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  width: 23px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #ee0b0b;
+}
+
+@media (max-width: 768px) {
+  .container_menu_web {
+    display: none;
+  }
+}

@@ -1,0 +1,84 @@
+.product_container {
+  display: flex;
+  flex-direction: row; /* Alinea los elementos en fila */
+  overflow-x: auto;    /* Habilita el scroll horizontal */
+  padding: 10px;
+  gap: 15px;           /* Espacio entre las tarjetas */
+  scroll-snap-type: x mandatory; /* Snap scrolling para mejorar la experiencia */
+  -webkit-overflow-scrolling: touch; 
+  background-color: rgb(223, 247, 8);
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 250px; /* Ajusta el tamaño mínimo de las tarjetas */
+  max-width: 250px; /* Ajusta el tamaño máximo de las tarjetas */
+  border: 1px solid #b1acac;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(12, 12, 12, 0.5);
+  background-color: rgb(255, 255, 255);
+  transition: all 0.3s;
+  margin: 15px 0; /* Elimina el margen lateral que podría romper el diseño */
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.product:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+}
+
+.targ_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+}
+
+.product_image {
+  width: 100px;
+  height: 85px;
+  border-radius: 10px;
+}
+
+/* Media Queries para Responsividad */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .product_container {
+    gap: 10px; /* Reduce el espacio entre tarjetas */
+    padding: 5px; /* Ajusta el padding */
+  }
+
+  .product {
+    min-width: 200px; /* Reduce el tamaño mínimo de las tarjetas */
+    max-width: 200px; /* Reduce el tamaño máximo de las tarjetas */
+  }
+
+  .product_image {
+    width: 80px; /* Ajusta el tamaño de la imagen */
+    height: 60px; /* Ajusta el tamaño de la imagen */
+  }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 900px) {
+  .product_container {
+    gap: 12px; /* Ajusta el espacio entre tarjetas */
+    padding: 8px; /* Ajusta el padding */
+  }
+
+  .product {
+    min-width: 225px; /* Ajusta el tamaño mínimo de las tarjetas */
+    max-width: 225px; /* Ajusta el tamaño máximo de las tarjetas */
+  }
+
+  .product_image {
+    width: 90px; /* Ajusta el tamaño de la imagen */
+    height: 70px; /* Ajusta el tamaño de la imagen */
+  }
+}

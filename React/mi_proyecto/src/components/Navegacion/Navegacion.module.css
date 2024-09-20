@@ -1,0 +1,85 @@
+/* .header .menu_web {
+  display: flex;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", Geneva, Verdana, sans-serif;
+  z-index: 20;
+} */
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.button {
+  margin-left: 35px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.header {
+  
+  background-color: #000000e0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px;
+  z-index: 1000;
+  min-height: 7rem;
+  width: 100%;
+}
+
+.header button {
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.mascara_Carrito {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  background-color: #000000ad;
+  overflow: auto;
+  display: flex;
+  z-index: 0;
+}
+
+.class-menu-btn {
+  background-color: #cac706;
+  display: none;
+}
+
+.menu_web--typeProducts {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+}
+
+
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: block;
+  }
+
+  #menu-btn {
+    order: -1;
+  }
+
+  /* .header button {
+    margin-left: 0px;
+    margin: 12px 0px;
+  } */
+}

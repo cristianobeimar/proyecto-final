@@ -1,0 +1,181 @@
+/* Estilos Generales */
+.carousel,
+.carousel-item {
+  width: 100%;
+  overflow: hidden;
+}
+ .carousel{
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}/* Para posicionar los botones en los extremos */
+
+/* Carrusel */
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Items del Carrusel */
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2.5/1;
+  display: block;
+}
+
+/* Controles del Carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  /* padding: 0.5rem; */
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-control-prev {
+  left: 10px;
+  margin-bottom : y 500px;
+  height: 70px;
+}
+
+.carousel-control-next {
+  right: 10px;
+  height: 70px;
+
+}
+
+.carousel-control-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Indicadores del Carrusel */
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.indicator-button {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.indicator-button.active {
+  background: #333;
+}
+
+/* Sección Ofertas */
+.ofertas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(12, 12, 12, 0.5);
+  background-color: rgb(255, 255, 255);
+  color: #0c0c0c;
+  gap: 40px;
+  padding: 10px;;
+}
+
+.descrip {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 400px;
+  justify-content: space-around;
+}
+
+.ofertas img {
+  height: 300px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.ima:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+}
+
+
+h1 {
+  align-items: center;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .carousel-image {
+    aspect-ratio: 2/1;
+  }
+  
+  .ofertas {
+    flex-direction: column;
+    gap: 20px;
+    min-width: 300px;
+  }
+
+  .descrip {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ofertas img {
+    height: 200px;
+    width: 200px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    padding: 0.3rem;
+
+  }
+
+  .carousel-control-svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .indicator-button {
+    width: 8px;
+    height: 8px;
+  }
+
+  .ofertas {
+    min-width: 250px;
+  }
+
+  .ofertas img {
+    height: 150px;
+    width: 150px;
+  }
+}
